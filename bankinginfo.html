@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking Details | United Commercial Bank</title>
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="border-b-2 border-gray-200">
+      <!-- Navigation -->
+      <nav class="w-4/5 mx-auto py-4 flex justify-between items-center">
+        <div class="logo sm:m-0 mx-auto">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="logo" class="w-28"
+          /></a>
+        </div>
+
+        <ul class="main-menu hidden sm:flex items-center">
+          <li>
+            <a
+              href="index.html"
+              class="text-lg text-gray-600 hover:text-red-900 mr-4"
+            >
+              Home
+            </a>
+          </li>
+          <div class="profile profile-user flex items-center"></div>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Body -->
+
+    <main class="w-4/5 mx-auto">
+      <!-- Banking Card  Section -->
+      <section class="banking-card-container">
+        <div class="title">
+          <h2 class="text-4xl font-bold text-center">
+            Transaction
+            <span class="red"> Info</span>
+          </h2>
+        </div>
+
+        <div
+          class="
+            transaction-cards
+            mt-28
+            grid
+            lg:grid-cols-3
+            grid-cols-1
+            lg:gap-4
+            gap-8
+          "
+        >
+          <div class="card text-center p-8">
+            <p class="text-xl">Deposit</p>
+            <h2 class="text-3xl font-medium mt-4 overflow-x-auto">
+              $<span id="total-deposit">00</span>
+            </h2>
+          </div>
+
+          <div class="card text-center p-8">
+            <p class="text-xl">Withdraw</p>
+            <h2 class="text-3xl font-medium mt-4 overflow-x-auto">
+              $<span id="total-withdraw">00</span>
+            </h2>
+          </div>
+
+          <div class="card text-center p-8">
+            <p class="text-xl">Balance</p>
+            <h2 class="text-3xl font-medium mt-4 overflow-x-auto">
+              $<span id="total-balance">1400</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Input Section for Deposit and Withdraw -->
+
+      <section
+        class="
+          transaction-section
+          grid
+          lg:grid-cols-3
+          grid-cols-1
+          lg:gap-4
+          gap-8
+        "
+      >
+        <div class="transaction-left flex flex-col justify-center p-6">
+          <h2 class="text-3xl font-bold text-gray-700 mb-4">Deposit Money</h2>
+          <p class="text-md mb-4 text-gray-400">
+            You can Easily Deposit money from our Website. It's really easy and
+            user friendly.
+          </p>
+          <div class="deposit-form">
+            <input
+              id="deposit-input"
+              type="text"
+              class="w-full border-gray-400 border-2 p-3 mb-4 rounded"
+              placeholder="Enter Deposit Amount"
+            />
+            <button
+              id="deposit-submit"
+              type="submit"
+              class="w-full bg-red text-white p-3 rounded-full"
+            >
+              Deposit
+            </button>
+          </div>
+        </div>
+
+        <div class="transaction-mid hidden lg:block flex items-center">
+          <img src="images/banking.svg" alt="banking" />
+        </div>
+
+        <div class="transaction-right flex flex-col justify-center p-6">
+          <h2 class="text-3xl font-bold text-gray-700 mb-4">Withdraw Money</h2>
+          <p class="text-md mb-4 text-gray-400">
+            You can Easily Withdraw money from our Website. It's really easy and
+            user friendly.
+          </p>
+          <div class="withdraw-form">
+            <input
+              id="withdraw-input"
+              type="text"
+              class="w-full border-gray-400 border-2 p-3 mb-4 rounded"
+              placeholder="Enter Withdraw Amount"
+            />
+            <button
+              id="withdraw-submit"
+              type="submit"
+              class="w-full bg-red text-white p-3 rounded-full"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <p class="text-gray-400">&copy; Copyright Reserved By UCB Bank</p>
+    </footer>
+
+    <!-- Font Awesome JS CDN -->
+    <script
+      src="https://kit.fontawesome.com/8184740b0e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS File -->
+    <script src="js/banking.js"></script>
+  </body>
+</html>

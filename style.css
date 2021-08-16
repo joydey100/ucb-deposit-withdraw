@@ -1,0 +1,94 @@
+/* Google Font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  padding: 100px 0;
+}
+.bg-red {
+  background-color: #dc3338;
+}
+.red {
+  color: #dc3338;
+}
+input:focus,
+button:focus {
+  outline: 0;
+}
+.email-input input,
+.password-input input {
+  width: 100%;
+  outline: 0;
+}
+.login-right h4,
+.title h2 {
+  position: relative;
+}
+.login-right h4::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 4px;
+  bottom: -20px;
+  left: 0;
+  background-color: #dc3338;
+}
+.title h2::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #dc3338;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.login-section {
+  border-radius: 30px;
+  background: #ededed;
+  box-shadow: 20px 20px 60px #c9c9c9, -20px -20px 60px #ffffff;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.transaction-cards .card,
+.transaction-left,
+.transaction-right {
+  border-radius: 30px;
+  background: #ededed;
+  box-shadow: 20px 20px 60px #c9c9c9, -20px -20px 60px #ffffff;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.profile.profile-user {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-image: url(images/profile.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 992px) {
+}
